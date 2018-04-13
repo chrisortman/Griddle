@@ -24,7 +24,7 @@
     "build-ts": "cp src/module.d.ts dist/module/",
     "build-umd": "webpack --config webpack.config.js",
     "build-modules": "cross-env BABEL_ENV=build babel src --out-dir dist/module ",
-    "ship-it": "npm run build && npm publish --tag next"
+    "ship-it": "npm run build && npm publish --registry=https://registry.npmjs.org/ --tag next"
   },
   "peerDependencies": {
     "react": ">=15"
